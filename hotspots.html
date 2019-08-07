@@ -1,0 +1,372 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hotspots</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style type="text/css">
+			.typewrite{ color:black; font-weight: bold; font-size: 200px;}
+			h3{
+				color: #3a3a3a;
+			}
+		</style>
+		<script type="text/javascript">
+			var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+		</script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+					<header id="header" class="alt style2">
+						
+						
+							<a class="navbar-brand" style="text-decoration: none; border:none;"><img src="images/logo.png" width="75" alt="logo" style="padding: 10px;"></a>
+								<a href="index.html" class="logo" ><strong>IIT (ISM) DHANBAD</strong><br><br><br>
+					
+					</header>
+
+				<!-- Menu -->
+					<!-- <nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="landing.html">Landing</a></li>
+							<li><a href="generic.html">Generic</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav> -->
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2" style="background-image: url('img/Pm.jpg');background-repeat: no-repeat;background-size: cover;">
+						<div class="inner">
+							
+							<header class="major" >
+								 <h1 style="padding-left: 20px;"  class="typewrite" data-period="2000" data-type='[ "Hotspots", " and ", "Chilling Spots", "IIT (ISM) DHANBAD" ]'></h1>
+								<!-- <h1>Landing</h1> -->
+							</header>
+							<!-- <div class="content">
+								<p></p>
+							</div> -->
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Chilling Spots</h2>
+									</header>
+									<p>The grandeur of the multitude of academic buildings in the college does not intimidate the holistic development of the students, for the campus does not lack in the field of 'Hotspots’ - for them to socialize amongst themselves, in turn having an opportunity to improve their disposition as well.</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<a class="image">
+										<img src="img/og.jpg" alt="" data-position="center center" style="object-fit: cover;width:4760; height: 100%;" />
+									</a>
+									<div class="content" style="background: #ffffff; color: #3a3a3a;">
+										<div class="inner">
+											<header class="major">
+												<h3>Oval Garden:</h3>
+											</header>
+													One of the oldest gardens of IIT(ISM) Dhanbad, the Oval Garden garden is located in front of the 		Heritage Building. As the name suggests, this garden is oval shaped and is open for everyone in the during college hours. People from inside as well as outside the campus visit the garden to witness its beauty. An annual flower show is organized in the month of February to showcase a staggering variety of beautiful flowers growing in the garden. The garden boasts of possessing all kinds of flowers present during the Mughal empire. It is famous for a 2.5 million years old fossil, named Petrified Wood, that stands at the heart of this garden. With such a rich history, this garden acts as a source of nonstop fascination.</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="img/ev.jpeg" alt="" data-position="center" style="object-fit: cover;width:4760; height: 100%;"/>
+									</a>
+									<div class="content" style="background: #f8f8f8; color: #3a3a3a;">
+										<div class="inner">
+											<header class="major">
+												<h3>Eco Vatika:</h3>
+											</header>
+											<p>
+											Located in front of the Ruby (Girls) Hostel, this is a popular chilling spot for girls to relax in the evening after their classes. Renovated in the year 2018, this garden has a few trees, a narrow water stream and metal chairs to relax, making it a perfect shady and windy location to hang out with your friends with a plate full of Maggie, a cup a coffee and a lot of chitchats.
+											</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="img/rg.jpeg" alt="" data-position="center" style="object-fit: cover; width:4760;height: 100%;"/>
+									</a>
+									<div class="content" style="background: #ffffff; color: #3a3a3a;">
+										<div class="inner">
+											<header class="major">
+												<h3>Rock Garden:</h3>
+											</header>
+											<p>
+												Located near the entrance of the college, this is the most visited garden in the Institute after the Oval Garden. Whether it’s the fatigue of walking to the main gate all the way from Topaz or tiredness after a long fun-day outside the campus, this garden serves as a perfect spot to take a break thanks to its ideal location.
+											</p>
+										</div>
+									</div>
+								</section>
+							</section>
+						</div>
+				<div id="main">
+							<section id="two" class="spotlights">
+								<section>
+									<a class="image">
+										<img src="img/mainc.jpg" alt="" data-position="center" style="object-fit: cover;width:4760; height: 100%;"/>
+									</a>
+									<div class="content" style="background: #f8f8f8; color: #3a3a3a;">
+										<div class="inner">
+											<header class="major">
+												<h3>Main Canteen:</h3>
+											</header>
+											<p>
+											The second oldest canteen in the campus after Ram Dhani, the main canteen is the epicenter of most of the student activities in the college. With a juice center for ever-ready refreshments, a stationery shop that also caters to the day-to-day needs of the students, a fruit counter and many more, the main canteen arguably stands amongst the most favorite fraternizing sites in the Institute.
+												</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="img/rd.jpg" alt="" data-position="center" style="object-fit: cover;width:4760; height: 100%;"/>
+									</a>
+									<div class="content" style="background: #ffffff; color: #3a3a3a;">
+										<div class="inner">
+											<header class="major">
+												<h3>Ram Dhani (RD):</h3>
+											</header>
+											<p>
+												If you haven’t seen RD yet, then you’ve missed out on a significant chunk of ISM’s history. It is a lot more to this tea stall than meets the eye, despite its seemingly ordinary appearance. RD, named after its first owner Ram Dhani, has served as the most typical chilling point of the Institute for over half a century now. Even so, “RD ki Chai” and “RD pe  Bakar”, still top the list of ‘the most-used phrases by ISM students’.
+</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="img/amulc.jpg" alt="" data-position="center" style="object-fit: cover; height: 100%;"/>
+									</a>
+									<div class="content" style="background: #f8f8f8; color: #3a3a3a;">
+										<div class="inner">
+											<header class="major">
+												<h3>AMUL:</h3>
+											</header>
+											<p>
+											In addition to the aforementioned canteens, ‘AMUL’ (that has nothing to do with the organization) serves as the third fast food site for the students to hang out. With a stationery and xerox shop of its own, the place also serves as a good alternative to the main canteen for the students to buy their everyday stuff.
+											</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="img/pa.jpg" alt="" data-position="center" style="object-fit: cover;width:4760; height: 100%;"/>
+									</a>
+									<div class="content" style="background: #ffffff; color: #3a3a3a;">
+										<div class="inner">
+											<header class="major">
+												<h3>Penman Auditorium:</h3>
+											</header>
+											<p>
+												Named after the institute’s founder-principal Dr. David Penman, the spacious and air-conditioned auditorium located in front of Diamond Hostel serves as an ideal spot to organize several events and competitions for the students. Established in the year 19xx, the auditorium, on similar grounds as other old buildings of the institute, exhibits an appealing vintage built painted in brick red color. A lot of intern talks, workshops, not to mention the ‘Hackfest’, takes place within the four walls of this auditorium, rendering it indispensable to the college’s innumerable 		extra-curricular activities around the year.
+</p>
+										</div>
+									</div>
+								</section>
+							</section>
+						</div>
+						<div id="main">
+							<section id="two" class="spotlights">
+								<section>
+									<a class="image">
+										<img src="img/herit.jpg" alt="" data-position="center" style="object-fit: cover;width:4760; height: 100%;"/>
+									</a>
+									<div class="content" style="background: #f8f8f8; color: #3a3a3a;">
+										<div class="inner">
+											<header class="major">
+												<h3>Heritage Building:</h3>
+											</header>
+											<p>
+												The oldest and perhaps the most beautiful building of all, the Heritage Building stands out imputed to its characteristic colonial architecture, in addition to the tranquilizing Oval Garden before it. The building houses the oldest departments of the Institute, the departments of Applied Geology and Mining Engineering. However, its appealing design appeals to all students irrespective of departments, rendering it a quite popular consorting spot for the campus community
+											</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="img/cl.png" alt="" data-position="center" style="object-fit: cover;width:4760; height: 100%;"/>
+									</a>
+									<div class="content" style="background: #ffffff; color: #3a3a3a;">
+										<div class="inner">
+											<header class="major">
+												<h3>Central Library:</h3>
+											</header>
+											<p>
+											The most recent and humongous marvel in the campus, the magnificence of the seven-storeyed Central Library is truly something to witness. Each floor in the library is fully air-conditioned, with charging ports and a comfortable noiseless environment for the students to focus. It opens from 9:30 AM to 9:00 PM for six days a week (except Sunday). The seventh floor of the building is a reading hall, which is open to all the campus residents from 9:30 AM to 12:00 AM the whole week. For those who would like to grab a bite midst the books, the ground floor has a cafeteria, with several kinds of fast foods available at a nominal price.
+</p>
+										</div>
+									</div>
+								</section>
+						</div>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="inner">
+									<header class="major">
+										<h2>WHAT YOU SEEK IS SEEKING YOU...</h2>
+									</header>
+									<p>With perennial fests and co-curricular activities, the environment of the Institute constantly haunts the students with a ‘fear of missing out’. So you're invariably gonna have their your full, with no scarcity of events to develop your persona.</p>
+									<ul class="actions">
+										<li><a href="https://www.youtube.com/watch?v=Tp9iD7YAcKo" target="blank" class="button next">Campus Tour</a></li>
+									</ul>
+								</div>
+							</section>
+							
+							
+		
+
+					
+
+				<!-- Contact -->
+					<!-- <section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">information@untitled.tld</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(000) 000-0000 x12387</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon alt fa-home"></span>
+										<h3>Address</h3>
+										<span>1234 Somewhere Road #5432<br />
+										Nashville, TN 00000<br />
+										United States of America</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section> -->
+
+				<!-- Footer -->
+					<!-- <footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer> -->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

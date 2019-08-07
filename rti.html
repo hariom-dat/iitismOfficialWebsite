@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>IIT ISM Dhanbad</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/animations.css">
+  <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="fixed-top" data-toggle="affix">
+	<header id="top_header">
+		<div class="row" style="margin: 0;">
+				<div class="col-md-12" id="first_header">
+					<div class="container">
+						<a href="admissions.html">Admissions</a>
+						<a href="#">International Relations</a>
+						<a href="http://www.iitismlib.ac.in/">Library</a>
+						<a href="#">Faculty & Staff</a> 
+						<a href="https://mis.iitism.ac.in/">MIS (Intra)</a>
+						<a href="notices.html">Notice/Tenders</a>
+						<a href="http://mail.iitism.ac.in/">Web Mail</a>
+						<a href="#">Quick Links</a>
+						<a href="search_result.html" style="background: #ffffff; font-size: 12px; padding: 0px 10px 1px 7px; float: right; border-radius: 10px; color: #3a3a3a;"><i class="fa fa-search"></i>&nbsp;Search</a>
+					
+					</div>
+				</div>
+		</div>
+
+	</header>
+
+	<div id="myOverlay" class="overlaysearch">
+	  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+	  <div class="overlaysearch-content">
+	    <form action="/action_page.php">
+	      <input type="text" placeholder="Search.." name="search">
+	      <button type="submit"><i class="fa fa-search"></i></button>
+	    </form>
+	  </div>
+	</div>
+
+	<nav class="navbar navbar-expand-md shadow">
+		<div class="container">
+			  <!-- Brand -->
+		  <a class="navbar-brand" href="#"><img src="img/logo.png" class="img-fluid" width="80px">
+						<h6 id="clg_name">भारतीय प्रौद्योगिकी संस्थान  (भारतीय खनि विद्यापीठ), धनबाद <br>
+						Indian Institute of Technology (ISM) Dhanbad</h6></a>
+
+		  <!-- Toggler/collapsibe Button -->
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <!-- Navbar links -->
+		  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+		    <ul class="navbar-nav ml-auto">
+		      <!-- Dropdown -->
+			    <li class="nav-item dropdown">
+			      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+			        About Us
+			      </a>
+			      <div class="dropdown-menu">
+			        <a class="dropdown-item" href="#">Overview</a>
+			        <a class="dropdown-item" href="about_administration.html">Administration</a>
+			        <a class="dropdown-item" href="#">Our Vision</a>
+			        <a class="dropdown-item" href="#">History & Discovery</a>
+			        <a class="dropdown-item" href="#">Facts & Figures</a>
+			        <a class="dropdown-item" href="#">Experience ISM</a>
+			      </div>
+			    </li>
+		      <li class="nav-item dropdown">
+			      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+			        Academics
+			      </a>
+			      <div class="dropdown-menu">
+			        <a class="dropdown-item" href="#">Overview</a>
+			        <a class="dropdown-item" href="#">Departments</a>
+			        <a class="dropdown-item" href="#">About</a>
+			        <a class="dropdown-item" href="#">Centers</a>
+			        <a class="dropdown-item" href="#">Academic Calender</a>
+			        <a class="dropdown-item" href="#">Faculty</a>
+			        <a class="dropdown-item" href="#">Convocation</a>
+			        <a class="dropdown-item" href="#">Transcripts</a>
+			      </div>
+			    </li> 
+		      <li class="nav-item dropdown">
+			      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+			        Campus Life
+			      </a>
+			      <div class="dropdown-menu">
+			        <a class="dropdown-item" href="#">Overview</a>
+			        <a class="dropdown-item" href="#">Societies</a>
+			        <a class="dropdown-item" href="#">About</a>
+			        <a class="dropdown-item" href="#">Hotspots</a>
+			        <a class="dropdown-item" href="#">Scholarships</a>
+			        <a class="dropdown-item" href="#">Accomodation</a>
+			        <a class="dropdown-item" href="#">Sports</a>
+			        <a class="dropdown-item" href="#">Festival/Events</a>
+			        <a class="dropdown-item" href="#">Student Achievements</a>
+			        <a class="dropdown-item" href="#">Gymkhana</a>
+			        <a class="dropdown-item" href="#">Traditions</a>
+			        <a class="dropdown-item" href="#">Health Centers</a>
+			      </div>
+			    </li> 
+		      <li class="nav-item dropdown">
+			      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+			        About Us
+			      </a>
+			      <div class="dropdown-menu">
+			        <a class="dropdown-item" href="#">Overview</a>
+			        <a class="dropdown-item" href="#">Giving Back</a>
+			        <a class="dropdown-item" href="#">About</a>
+			        <a class="dropdown-item" href="#">Alumni News</a>
+			        <a class="dropdown-item" href="#">Publications</a>
+			        <a class="dropdown-item" href="#">Alumni Awards</a>
+			      </div>
+			    </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Research</a>
+		      </li>
+		    </ul>
+		  </div> 
+		</div>
+
+	</nav>
+</div>
+
+<div id="notices">
+	<h3 class="text-center pb-4">Information under RTI (in pursuance of Section 4(1) (b) of RTI Act ) </h3>
+	<h3 class="text-center pb-4"> Right to information Act - 2005 </h3>
+	<div class="container" id="cont">
+
+<strong><br><br>About the Act :</strong>
+<strong>Name &amp; Title of the Act : Right to Information Act. 2005<br></strong>
+<strong>Definition</strong>:<br><br> Right to information means the right to<br><br>
+<p style="text-align: justify;">1. Inspection of work, documents, records<br>
+2. Taking notes, extracts or, certified copies of documents or records.<br>
+3. Obtaining information in the form of electronics mode or through printouts where such information is stored in a computer or any other device subject relevant provisions in this regard.</p><br>
+<p style="text-align: justify;">Objective/purpose of the Act : To provide available information of the ISM as per provisions of RTI Act to the Indian Citizen on payment of prescribed fees.</p><br><br>
+<p style="text-align: justify;"><strong>1. The particulars of its organization, functions and duties :</strong></p><br>
+<p style="text-align: justify;"><strong>1.0 About Organization :</strong></p><br>
+<p style="text-align: justify;"><strong>1.1 Name :</strong></p><br>
+<p style="text-align: justify;">i. Indian Institute of Technology (Indian School of Mines), Dhanbad – 826 004, Jharkhand.</p>
+<p style="text-align: justify;">ii. Head of the Organisation: Prof. Rajiv Shekhar, Director, IIT(ISM), Dhanbad </p>
+<p style="text-align: justify;"><strong><br>1.2 Objective of the Institute</strong></p>
+<p style="text-align: justify;">The primary objective of the IIT (ISM), Dhanbad is to provide trained manpower, scientists, technologists in the areas of technology, engineering and management, applied sciences and applied arts of highest caliber who would engage in teaching, research, designing and development to help in the development of nation in the areas of science and technology towards self reliance in her technological needs..</p>
+<p style="text-align: justify;"><strong><br>1.3 Brief History of the Institute:</strong></p>
+<p style="text-align: justify;">Indian Institute of Technology (Indian School of Mine), Dhanbad was formally opened by His Excellency the Viceroy Lord Irwin on 9th December, 1926 and the general work of the ISM commenced on 10th December, 1926 in its premises at Dhanbad with Dr. D. Penman as its first Principal. On the completion of the first 25 years of its existence the Silver Jubilee Celebrations were inaugurated by Dr. Rajendra Prasad, the then President of India, which gave a fresh fillip to this institution. The Institute celebrated Golden Jubilee in 1976, Diamond Jubilee in 1986 and Platinum Jubilee in 2001.
+The Institute is located at Dhanbad in order to facilitate the mining education to be in close relation with the Mining Industry. For training in Earth Sciences, the province of Jharkhand and its surroundings are unrivalled in their variety of geological formations, in the multiplicity of structural and field characteristics and also in the diversity and richness of the metallic and non-metallic mineral resources. The locational advantage of II(ISM) is that it is situated at the core of the industrial base of the region which hosts a number of coalmines, steel plants, fertilizer plants, refractory industry, heavy machine building plant, etc. It has 88 hectare residential campus of its own consisting of graceful blend of old-world and new style buildings. The serene campus comprises academic buildings, student hostels, faculty and staff quarters, health centre, workshop, canteen and other infrastructural facilities for a cosmopolitan community. The Institute is about three kilometers to the north of Dhanbad Railway Station, altitude of the place is 212 m above MSL and average rainfall is around 148 cm, and the maximum and minimum temperatures are around 40 and 7 degree respectively.
+</p>
+
+<p style="text-align: justify;"><strong>Present Scenario :</strong></p>
+<p style="text-align: justify;">IIT(ISM) caters to the human resource needs of the Nation in the areas of Mining, Petroleum, Mining Machinery, Mineral Engineering and Earth Sciences besides developing manpower in the related disciplines of Management, Electronics Engineering, Electrical Engineering, Environmental Sciences and Engineering, Computer Science and Engineering, Mechanical Engineering, Applied Sciences, and Humanities and Social Sciences. In due recognition of its vital role in the service of the nation, IIT(ISM) was granted autonomy by the Government of India.  </p>
+<p style="text-align: justify;"><strong><br>1.4 Vision/Mission :</strong></p>
+<p style="text-align: justify;"><span style="text-decoration: underline;"><b>Vision</b>:</span></p>
+<p style="text-align: justify;">To be nationally and internationally acclaimed premier institution of higher technical and scientific education with social commitment having an ethos for intellectual excellence, where initiative is nurtured, where new ideas, research and scholarship flourish, where intellectual honesty is the norm and from which will emerge the leaders and innovators of tomorrow in the realm of technology. While serving as a catalyst in a developing society, its goal as one of the premier technology education institution in the country would be to intimately involve itself not just in the technological development of the nation but indeed in its overall development.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;"><b>Mission</b>:</span></p>
+<p style="text-align: justify;">• To educate and train manpower in various disciplines of engineering &amp; technology, management, applied arts at the graduate, postgraduate and research levels.
+• To foster the creation of new and relevant technologies in the areas of its core competency and to transfer them to industry for effective utilization.
+• To participate directly in the planning and solving of engineering and managerial problems of relevance to Indian Industry and to Society at large.
+• To develop and conduct continuing education programmes for practicing engineers and managers.
+• To develop strong collaborative and cooperative links with private and public sector industries and government user departments.
+• To develop comprehensive and intimate interaction with premier academic and research institutions within the country and abroad for mutual benefit.
+• To develop programmes for faculty growth and development.
+• To anticipate the technological needs of the Nation and to plan and prepare to cater to them.
+• To interact with the community/society at large with a view to include in them a feel for scientific and technological thought and endeavor.
+• To develop the region in which the Institute is located through community development programmes including training and education.</p>
+<p style="text-align: justify;"><strong><br>1.5 Organizational Structure :</strong></p>
+<p style="text-align: justify;">The Director is Principal academic and Executive Officer of the Institute  and exercises general supervision and control over the affairs of the Institute and give effect to the decision of its authorities. He reports to the BOG. The Director is Ex-officio member of the Board of Governors.  For day-to-day administration of the Institute, the Director is assisted by Dy. Director,  Dean (Faculty), Dean (Infrastructure), Dean (Research &amp; Development), Dean (Students Welfare),  Dean (Academic),  Chairman (CDC), Registrar, Jt. Registrar, Dy. Registrar,  Campus Engineer etc. </p>
+<p style="text-align: justify;"><strong><br>1.6 Services being provided by the Institute :</strong></p>
+<p style="text-align: justify;"><strong>(A) Teaching UG, PG and Research levels </strong></p>
+
+<p style="text-align: justify;">(B) To conduct state-of-the research and development programmes and fundamental in frontier areas of engineering, science &amp; technology,</p>
+<p style="text-align: justify;">(C) To under take sponsored research and development, consultancy.</p>
+<p style="text-align: justify;">(D) To impart manpower training through continuing education programmes</p>
+<p style="text-align: justify;">(E) To organize conferences, seminars and short term courses.</p>
+<p style="text-align: justify;"><strong>1.7 Address of the Institute</strong></p>
+<p style="text-align: justify;">IIT (ISM)
+Dhanbad – 826 004
+Jharkhand</p>
+<p style="text-align: justify;"><strong>1.8 Institute Workings hours :</strong></p>
+<p style="text-align: justify;">Academic Departments : 8.00 AM to 5.30 PM with lunch break from 12.00 to 1.30 PM<br>
+Administration : 9.00 AM to 6.00 PM with lunch break from   1.00 to 2.00 PM with lunch break <br>
+Security Section : Round the clock <br>Library  : Please see the IIT(ISM) website [ww.iitism.ac.in]. <br>
+</p>
+<p style="text-align: justify;"><strong>1.9 Council, Board, Committees and other bodies.</strong></p>
+<p style="text-align: justify;">(1) Board of Governors <br> (2) Finance Committee <br> (3) Senate  <br>(4) Building Committee <br>
+   (Please see Annexure - I) . <a href="https://www.iitism.ac.in/pdfs/rti/ANNEXURE- I (BOARDS, COUNCILS, COMMITTEES AND OTHER BODIES).pdf" target="_blank">Click Here</a> <br><br> Also see the following link on IIT(ISM) Website: <br>
+ https://www.iitism.ac.in/pdfs/bog.pdf<br>
+ https://www.iitism.ac.in/pdfs/fc.pdf<br>
+ https://www.iitism.ac.in/pdfs/senate/List-Senate-Members.pdf<br>
+</p>
+<p style="text-align: justify;"><strong>2.0 Power and duties of Officers and Employees.</strong></p>
+<p style="text-align: justify;">The Director is Principal Academic and Executive Officer of the Institute and is responsible for the proper administration of the Institute and for the imparting of instructions and maintenance of the discipline therein. All other staff of the 	Institute shall be subordinate to him. Director has the power to incur expenditure in accordance with the procedure as laid down by the Board of Governors/MHRD from time to time. [Please see the following link on IIT(ISM) website : https://www.iitism.ac.in/uploads/news_events/admin/IITISM-STATUTES.pdf</p>
+<p style="text-align: justify;">Dy. Director shall assist the Director in academic and administrative work and in maintaining liaison with other institutions of higher learning and research and also with industrial undertaking and other employers.</p>
+<p style="text-align: justify;">Deans shall assist the Director in academic and administrative work and maintaining liaison with institution of higher learning.</p>
+<p style="text-align: justify;">Registrar shall be the Secretary of the Board of Governors, The Finance Committee, Senate  and Building Committees.    
+<br><br>Registrar is the custodian of records, the funds of the Institute and such other property of the Institute as the BOG may commit to his charge.
+</p>
+<p style="text-align: justify;">Other officials and staff members of the Institute assume powers, responsibilities and duties as assigned to them from time to time by the Director.</p>
+<p style="text-align: justify;"> (please see the following link on IIT(ISM) website) : <br><br>
+https://www.iitism.ac.in/uploads/news_events/admin/IITISM-STATUTES.pdf 
+</p>
+<p style="text-align: justify;"><strong>3.0 Procedure followed in the decision making process including channels of supervision and accountability.</strong></p>
+<p style="text-align: justify;">1. As per Statute of   IIT (ISM), Dhanbad. 
+(please see the following link at IIT (ISM) website) : <br>
+https://www.iitism.ac.in/uploads/news_events/admin/IITISM-STATUTES.pdf
+</p>
+<p style="text-align: justify;"><strong>4. 0 The norms set by it for the discharge of its functions  :</strong></p>
+<p style="text-align: justify;"><br>1. As Per Statute of IIT(ISM), Dhanbad. </p><br>
+<p style="text-align: justify;"><strong>5.0 Rules, regulations, instructions, manuals and records held by it for discharge of functions :</strong></p>
+<p style="text-align: justify;"><br>1. CPWD Manual
+<br>2. IIT Act
+<br>3. IIT(ISM) Website 
+<br>4. Statute of IIT(ISM), Dhanbad
+<br>5. Annual Report
+<br>6. Departmentwise list of faculty. 
+<br>7. List of employees with pay
+<br>8. All Institute’s rules/manuals/CCS Rules.</p>
+<p style="text-align: justify;"><strong>6.0 A statement of the categories of documents held by the organization or under its control :</strong></p>
+<p style="text-align: justify;"><br>(1) Administrative Office Orders/Circulars
+<br>(2) Decision and guidelines as approved by the Board of Governors, Finance Committee. 
+<br>(3) Annual Accounts
+<br>(4) Annual Reports
+<br>(5) Information Brochures (IIT, JEE)
+<br>(6) All records relating to the functioning of the organization.</p>
+<p style="text-align: justify;"><strong>7.0 The particulars of any arrangement that exists for consultation with or representation by the members of the public in relation to the formulation of its policy or implementation thereof.</strong></p>
+<p style="text-align: justify;">The Board of Governors and Finance Committee are decision making body of IIT (ISM) and the Senate for Academic and the Finance committee for financial matters are represented by eminent persons from the nominees of the Govt. of India/MHRD, industry, academic community, professional bodies who help in the formulation and implementation of the policies and programmes.
+<br><br>Different local committees are formed on need basis to advice administrative/academic/financial matters and other aspects even in routine functions of the Institute.
+</p>
+<p style="text-align: justify;"><strong>8.0 A statement of the boards, councils, committees and other bodies consisting of two or more persons constituted as its part or for the purpose of its advice, and as to whether meetings of those boards, councils, committees and other bodies are open to the public, or the minutes of such meetings are accessible for public.
+<br><br>Following are the main Board and  Committees of the Institute :
+</strong></p>
+<p style="text-align: justify;"><br>1. Board of Governors 
+<br>2. Finance Committees
+<br>3. Senate
+<br>4. Building Committee </p>
+
+<p style="text-align: justify;"><strong>9.0 . Directory of its officers and employees.</strong></p>
+<p style="text-align: justify;"><strong><strong>TELEPHONE DIRECTORY of IIT (ISM)&nbsp;&nbsp;[</strong><strong> <a href="https://www.iitism.ac.in/pdfs/telephone_directory/TD.pdf" target="_blank">Click Here</a>]</strong></strong></p>
+<!--<p style="text-align: justify;"><strong><strong>List of All Employees [</strong><strong><a href="https://www.iitism.ac.in/pdfs/emp.pdf" target="_blank">Click Here</a>]</strong></strong></p>-->
+<p style="text-align: justify;"><strong>10. The monthly remuneration received by each of its officers and employee including the system of compensation as provided in its regulations :
+<br><br> (Please see Annexure - II) . <a href="https://www.iitism.ac.in/pdfs/rti/emp.pdf" target="_blank">Click Here</a> <br><br> 
+</strong></p>
+<p style="text-align: justify;"><strong>11. The budget allocated to each of its agency indicating the particulars of all plans, proposed expenditures and reports on disbursement made  :</strong></p>
+<p style="text-align: justify;">The Annual budget and Annual accounts are finalized with the approval of Finance Committee and Board of Governors. The disbursements are made by the IIT(ISM) which is finally recorded in the Annual Accounts.<br><br>
+(Please See the Annual Budget – at Annexure – III) . <a href="https://www.iitism.ac.in/pdfs/rti/ANNEXURE- III   (BUDGETARY INFORMATION).pdf" target="_blank">Click Here</a> <br><br> 
+</p>
+<p style="text-align: center;"><strong><img class="aligncenter" title="Table" src="https://www.iitism.ac.in/assets/img/table.jpg" alt="" width="554" height="107"></strong></p>
+<p style="text-align: justify;"><strong>12. The manner of execution of subsidy programmes, including the amounts allocated and the details of beneficiaries of such programmes</strong></p>
+<p style="text-align: justify;">IIT (ISM) does not operate any subsidy programme.</p>
+<p style="text-align: justify;"><strong>13. Particulars of recipients of concessions, permit or authorizations granted by it.</strong></p>
+<p style="text-align: justify;">No such programmes is established in IIT (ISM).</p>
+<p style="text-align: justify;"><strong>14. Details in respect of the information available to or held by IIT (ISM) reduced in an electronic form.</strong></p>
+<p style="text-align: justify;">All relevant information about institute activities are made available on our website (www.iitism.ac.in) </p>
+<p style="text-align: justify;"><strong>15. The particulars of facilities available to citizens for obtaining information, including the working hours of a library or reading room. If maintained for public use.</strong></p>
+<p style="text-align: justify;">The Indian Citizen have the right to obtain the information from the CPIO of IIT (ISM). IIT (ISM) monitor 5 working days a week from Monday to Friday and follows the weekly holidays on Saturday and Sunday. The working hours of the ISM Admin. is 9.00 AM to 6.00 PM.
+<br><br>Library is only for registered users (students, faculty and staff) and not for general public use
+</p>
+<p style="text-align: justify;"><strong>16. The names, designation and other particulars of the Public Information Officer and the Appellate Authority.</strong></p>
+<p style="text-align: justify;"><strong>1) Appellate Authority<br></strong></p>
+<p style="text-align: justify;">Col.(Retd.) Dr. M K Singh,<br>Registrar<br>
+IIT (ISM)<br>
+Dhanbad – 826 004<br>
+Jharkhand</p>
+<p style="text-align: justify;">Tel.No. 0326-2296605(Office)<br>
+PBX : 0326-2235001 to 5004 Ext: 5202<br>
+Email: registrar@iitism.ac.in<br>
+Fax No. 0326-2296607<br></p>
+<p style="text-align: justify;"><strong>2) Central Public Information Officer<br></strong></p>
+<p style="text-align: justify;">Shri Anil Kumar<br>
+Assistant Registrar ( Internal Audit)<br>
+Accounts Section<br>
+IIT (ISM)<br>
+Dhanbad – 826 004<br>
+Jharkhand</p>
+<p style="text-align: justify;">Tel. No. 0326-2235627 (O)<br>
+PBX : 0326-2235001 to 5004 Ext: 5627<br>
+Email: ar_audit@iitism.ac.in<br>
+Fax: 0326-2296563</p>
+<p style="text-align: justify;"><strong>17. Application Form :</strong>
+(i) Name of the Applicant :<br>
+(ii) Address of the applicant<br>
+(iii) Certification regarding below poverty line issued by competent authority if applicable be enclosed.<br>
+Information required :<br>
+Rs. 10/- by Demand Draft/IPO in favour of Registrar, IIT (ISM), Dhanbad.</p>
+<p style="text-align: justify;"><strong>18. Application is to be sent directly to :<br></strong>
+Central Public Information Officer<br>
+IIT (ISM),<br>
+Dhanbad – 826 004<br>
+Jharkhand</p>
+<p style="text-align: justify;"><strong>IMPORTANT ANNEXURES :</strong></p>
+<p style="text-align: justify;">ANNEXURE – I    (BOARDS, COUNCIL, COMMITTES AND OTHER BODIES) <a href="https://www.iitism.ac.in/pdfs/rti/ANNEXURE- I (BOARDS, COUNCILS, COMMITTEES AND OTHER BODIES).pdf" target="_blank">Click Here</a> <br></p>
+<p style="text-align: justify;">ANNEXURE – II   (LIST OF EMPLOYEES WITH MONTHLY REMUNERATION) <a href="https://www.iitism.ac.in/pdfs/rti/emp.pdf" target="_blank">Click Here</a> <br></p>
+<p style="text-align: justify;">ANNEXURE – III  ( BUDGETARY INFORMATION)  <a href="https://www.iitism.ac.in/pdfs/rti/ANNEXURE- III   (BUDGETARY INFORMATION).pdf" target="_blank">Click Here</a> <br></p>
+<p style="text-align: justify;">ANNEXURE  - IV  ( CITIZEN’S CHARTER) <a href="https://www.iitism.ac.in/pdfs/rti/ANNEXURE - IV ( CITIZEN'S  CHARTER).pdf" target="_blank">Click Here</a> <br></p>
+<p style="text-align: justify;">ANNEXURE -  V   ( QUARTERLY AND ANNUAL REPORTS OF RTI APPLICATIONS AND APPEALS) <a href="https://www.iitism.ac.in/pdfs/rti/ANNEXURE - V (QUARTERLY AND ANNUAL REPORTS OF RTI APPLICATIONS AND APPAEALS ).pdf" target="_blank">Click Here</a>  <br></p>
+<p style="text-align: justify;">ANNEXURE – VI  (DETAILS OF FOREIGN AND DOMESTIC VISIT OF OFFICIALS) <a href="https://www.iitism.ac.in/pdfs/rti/ANNEXURE - VI (DETAILS OF FOREIGN AND DOMESTIC VISIT).pdf" target="_blank">Click Here</a>  <br></p>
+<p style="text-align: justify;">ANNEXURE – A  ( DETAILS OF BIDS  AWARDED BY PURCHASE &amp; STORES SECTION) <a href="https://www.iitism.ac.in/pdfs/rti/ANNEXURE- A  (DETAILS OF BIDS AWARDED BY PURCHASE AND STORE SECTIONS).pdf" target="_blank">Click Here</a> <br></p>
+
+	</div>
+
+</div>
+
+<div class="footer " style="font-size: 13.5px; line-height: 12px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<h6>Important Links</h6>
+				<a href="#"><p>IIT ISM Home</p></a>
+				<a href="#"><p>About Us</p></a>
+				<a href="#"><p>Departments</p></a>
+				<a href="#"><p>Courses</p></a>
+				<a href="#"><p>Faculties</p></a>
+			</div>
+			<div class="col-md-3">
+				<h6>Quick Links</h6>
+				<a href="#"><p>Contribute</p></a>
+				<a href="#"><p>Publications</p></a>
+				<a href="#"><p>Alumni in News</p></a>
+				<a href="#"><p>Notable in Alumni</p></a>
+				<a href="#"><p>IRAA Office</p></a>
+			</div>
+			<div class="col-md-3">
+				<h6>Explore</h6>
+				<a href="#"><p>International Relations</p></a>
+				<a href="#"><p>Alumni Affairs</p></a>
+				<a href="#"><p>Societal Missions</p></a>
+				<a href="#"><p>Innovation and Incubation</p></a>
+				
+			</div>
+			<div class="col-md-3">
+				<h6>Contact Us</h6>
+				<p style="line-height: 2">Main Campus
+				IIT (ISM), Dhanbad
+				Jharkhand, INDIA, 826004
+				</p>
+				<div>
+							<a href="#" class="fa fa-facebook"></a>
+							<a href="#" class="fa fa-twitter"></a>
+							<a href="#" class="fa fa-linkedin"></a>
+				</div>
+			</div>
+		</div>
+		<p class="text-center" style="padding-top: 10px;"><small>&copy; IRAA | IIT (ISM) All Rights Reserved</small></p>
+	</div>
+</div>
+
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="js/css3-animate-it.js"></script>
+
+<script type="text/javascript">
+
+
+
+    $(document).ready(function(){
+      $('.slickcarousel').slick({
+		  slidesToShow: 4,
+		  slidesToScroll: 1,
+		  autoplay: true,
+		  autoplaySpeed: 2000,
+		  arrow:true,
+		  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+
+		});
+    });
+    $(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 300) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+    if(height>$(window).height()-100){
+    	$('#top_header').hide();
+    	$('#clg_name').addClass('clgnamefont');
+    	$('.navbar').addClass('fixedTop');
+    }else{
+    	$('#top_header').show();
+    	$('#clg_name').removeClass('clgnamefont');
+    	$('.navbar').removeClass('fixedTop');
+    }
+});
+	$(document).ready(function() {
+	    $("#back2Top").click(function(event) {
+	        event.preventDefault();
+	        $("html, body").animate({ scrollTop: 0 }, "slow");
+	        return false;
+	    });
+
+	});
+
+
+	function openSearch() {
+		var myOverlay = document.getElementById("myOverlay");
+	    myOverlay.style.display = "block";
+	    window.addEventListener("click", function(e){
+	    	if(e.target == myOverlay){
+	    		myOverlay.style.display = "none";
+	    	}
+	    });
+	}
+
+	function closeSearch() {
+	  document.getElementById("myOverlay").style.display = "none";
+	}
+
+  </script>
+
+</body>
+</html>
